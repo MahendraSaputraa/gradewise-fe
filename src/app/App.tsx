@@ -4,8 +4,8 @@ import { Brand } from '../components/layout/Brand'
 import { PredictionWorkspace } from '../features/prediction/components/PredictionWorkspace'
 
 const highlights = [
-  { icon: Activity, value: '6 indikator', label: 'dianalisis bersamaan' },
-  { icon: BrainCircuit, value: 'Real-time', label: 'hasil prediksi instan' },
+  { icon: Activity, value: '19 indikator', label: 'dianalisis bersamaan' },
+  { icon: BrainCircuit, value: 'Model ML', label: 'hasil training asli' },
   { icon: ShieldCheck, value: 'Privat', label: 'tanpa menyimpan data' },
 ]
 
@@ -26,8 +26,8 @@ export function App() {
             <div className="eyebrow"><Sparkles size={14} /> Insight akademik berbasis data</div>
             <h1>Kenali potensi.<br /><span>Jaga arah kelulusan.</span></h1>
             <p>
-              Evaluasi dini performa mahasiswa melalui kebiasaan belajar, kehadiran,
-              dan dukungan lingkungan—dalam satu prediksi yang mudah dipahami.
+              Prediksi performa mahasiswa melalui 19 indikator akademik, kebiasaan,
+              dan dukungan lingkungan—ditenagai model machine learning yang telah dilatih.
             </p>
             <a className="hero-link" href="#prediction-form">
               Mulai evaluasi <ArrowDown size={17} />
@@ -39,8 +39,8 @@ export function App() {
             <div className="orbit-ring orbit-ring-inner" />
             <div className="score-core">
               <span>Student</span>
-              <strong>360°</strong>
-              <small>Success View</small>
+              <strong>19F</strong>
+              <small>ML Prediction</small>
             </div>
             <span className="orbit-dot dot-one" />
             <span className="orbit-dot dot-two" />

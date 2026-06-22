@@ -1,6 +1,6 @@
 # Gradewise
 
-Frontend modern untuk Student Graduation Prediction API berbasis FastAPI.
+Frontend modern untuk Student Performance Prediction API berbasis FastAPI dan model machine learning asli.
 
 ## Menjalankan aplikasi
 
@@ -23,7 +23,7 @@ src/
 │       ├── api/         # Fungsi request endpoint
 │       ├── components/  # Form, workspace, dan hasil
 │       ├── hooks/       # TanStack Query mutation
-│       ├── schemas/     # Zod schema dan test
+│       ├── schemas/     # Kontrak 19 fitur, Zod schema, dan test
 │       └── types/       # Kontrak TypeScript API
 ├── lib/                 # HTTP client bersama
 ├── styles/              # Styling global

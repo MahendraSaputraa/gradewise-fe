@@ -3,29 +3,28 @@ import { describe, expect, it, vi } from 'vitest'
 import { PredictionResult } from './PredictionResult'
 
 describe('PredictionResult', () => {
-  it('renders probability and dummy mode from the API response', () => {
+  it('renders the predicted score and real model state', () => {
     render(
       <PredictionResult
         result={{
-          prediction: 'aman',
-          probability: 0.76,
-          is_dummy: true,
-          message: 'Prediksi sementara untuk pengujian integrasi frontend.',
+          predicted_score: 68.9,
+          is_dummy: false,
+          message: 'Prediksi berhasil dibuat menggunakan model student performance.',
         }}
         onReset={() => undefined}
       />,
     )
 
-    expect(screen.getByText('Dalam jalur aman')).toBeInTheDocument()
-    expect(screen.getByText('76%')).toBeInTheDocument()
-    expect(screen.getByText('Mode simulasi')).toBeInTheDocument()
+    expect(screen.getByText('Prediksi nilai mahasiswa')).toBeInTheDocument()
+    expect(screen.getByText('68.9')).toBeInTheDocument()
+    expect(screen.getByText('Model ML aktif')).toBeInTheDocument()
   })
 
   it('lets the user start another evaluation', () => {
     const onReset = vi.fn()
     render(
       <PredictionResult
-        result={{ prediction: 'berisiko', probability: 0.68, is_dummy: false, message: 'Perlu pendampingan.' }}
+        result={{ predicted_score: 68, is_dummy: false, message: 'Prediksi berhasil.' }}
         onReset={onReset}
       />,
     )

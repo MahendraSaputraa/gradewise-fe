@@ -8,7 +8,7 @@ type NumberFieldProps = {
   suffix: string
   icon: LucideIcon
   min: number
-  max: number
+  max?: number
   step?: number
   error?: FieldError
   registration: UseFormRegisterReturn
